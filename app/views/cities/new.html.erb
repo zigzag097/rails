@@ -1,0 +1,9 @@
+	<%= form_for(@city) do |f| %>
+
+      <%= f.label :cityname %>
+      <%= f.text_field :cityname %>
+	  
+	  <%= f.label :statename %>
+	  <%= f.collection_select :state_id ,@states,:id,:statename%>
+      <%= f.submit "Submit to State", class: "btn btn-large btn-primary" %>
+    <% end %>

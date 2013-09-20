@@ -1,0 +1,9 @@
+	<%= form_for(@appointment) do |f| %>
+
+      <%= f.label :patiens %>
+      <%= f.collection_select :patient_id ,@patients,:id,:patient_name%>
+	  
+	  <%= f.label :doctors %>
+	  <%= f.collection_select :doctor_id ,@doctors,:id,:doctor_name%>
+      <%= f.submit "Submit to State", class: "btn btn-large btn-primary" %>
+    <% end %>

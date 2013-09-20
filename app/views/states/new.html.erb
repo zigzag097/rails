@@ -1,0 +1,7 @@
+	<%= form_for(@state) do |f| %>
+
+      <%= f.label :statename %>
+      <%= f.text_field :statename %>
+
+      <%= f.submit "Create State", class: "btn btn-large btn-primary" %>
+    <% end %>

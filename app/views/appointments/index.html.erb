@@ -1,0 +1,4 @@
+The patient has <%=@doctors.count %> appointmens with the following doctors
+<% @doctors.each do |f| %>
+<%= f.doctor_name %>
+<% end %>

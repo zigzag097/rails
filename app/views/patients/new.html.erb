@@ -1,0 +1,7 @@
+	<%= form_for(@patient) do |f| %>
+
+      <%= f.label :patientname %>
+      <%= f.text_field :patient_name %>
+	
+      <%= f.submit "Submit to Patients", class: "btn btn-large btn-primary" %>
+    <% end %>
